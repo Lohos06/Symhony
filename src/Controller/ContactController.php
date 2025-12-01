@@ -6,9 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 
-final class HelloController extends AbstractController
+final class ContactController extends AbstractController
 {
-    #[Route('/hello', name: 'app_hello', methods: ['GET'])]
+    #[Route('/contact', name: 'app_contact')]
     public function index(): Response
     {
         return $this->render('contact.html.twig');
