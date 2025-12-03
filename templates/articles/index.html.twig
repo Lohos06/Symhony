@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ArticlesController!{% endblock %}
+
+{% block main %}
+
+<div>
+    {% for article in articles %}
+        <p>{{article.titre}}</p>
+    {% endfor %}
+
+    {% if article is defined and article %}
+        <p>Le goat : {{article.titre}}</p>
+    {% endif %}
+</div>
+
+{% endblock %}
